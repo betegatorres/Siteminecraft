@@ -1,2 +1,2 @@
 ## Siteminecraft
-file:///C:/Users/bethy/Desktop/siteMinecraft/index.html
+https://betegatorres.github.io/Siteminecraft/
