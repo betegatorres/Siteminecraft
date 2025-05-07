@@ -81,6 +81,10 @@ text-align: left ;
 padding-left: 20px;
 }
 
+section{
+    scroll-margin-top: 200px;
+}
+
 #sobre{
     padding: 35px;
     background-color: #6b402f;
