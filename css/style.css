@@ -149,7 +149,7 @@ section{
     object-fit:cover;
 }
 
-#oque .container{
+.container item{
     display: grid;
     grid-template-columns:repeat(auto-fix, minmax(200px,1fr));
     gap:20px;
