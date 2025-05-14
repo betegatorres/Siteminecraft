@@ -67,7 +67,7 @@ header .container{
     font-weight: bold;
 }
 .banner{
-background:url(../img/minecraft-banner-1.jpg) no-repeat center/cover;
+background:url(../img/imagenssobre/minecraft-banner-1.jpg) no-repeat center/cover;
 flex-direction: column;
 height: 400px;
 display: flex ;
