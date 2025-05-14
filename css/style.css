@@ -164,18 +164,10 @@ font-size: 0.8em;
 
 #oque .container{
     display: grid;
-    grid-template-columns:repeat(auto-fix, minmax(100px, 2fr));
-    gap:20px ;
+    grid-template-columns:repeat(auto-fix, minmax(100px,2fr));
+    gap:20px;
     text-align: center;
     padding: 50px 0;
-}
-
-#oque .item{
-    background-color: #ffffff;
-    border: 1px #55ff00;
-    border-radius: 10px;
-    padding: 20px;
-    box-shadow: 0 4px 8px blueviolet;
 }
 
 @media (max-width:675px){
