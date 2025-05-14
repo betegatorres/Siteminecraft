@@ -164,8 +164,8 @@ font-size: 0.8em;
 
 #oque .containe{
     display: grid;
-    grid-template-columns: (200px, 1fr);
-    
+    grid-template-columns:repeat(auto-fix), minmax(200px, 1fr);
+    gap: ;
 }
 
 @media (max-width:675px){
