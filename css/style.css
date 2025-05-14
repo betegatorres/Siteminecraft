@@ -149,18 +149,6 @@ section{
     object-fit:cover;
 }
 
-a:hover{
-    color:rgb(0, 255, 0);
-    text-shadow:  5px 5px 5px darkgreen;
-}
-
-.fonte{
-font-size: 0.8em;
-}
-
-.card{
-    width: 70%;
-}
 
 #oque .container{
     display: grid;
@@ -168,6 +156,22 @@ font-size: 0.8em;
     gap:20px;
     text-align: center;
     padding: 50px 0;
+}
+
+.card{
+    width: 50%;
+}
+
+
+
+
+a:hover{
+    color:rgb(0, 255, 0);
+    text-shadow:  5px 5px 5px darkgreen;
+}
+
+.fonte{
+font-size: 0.8em;
 }
 
 @media (max-width:675px){
