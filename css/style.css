@@ -158,6 +158,14 @@ a:hover{
 font-size: 0.8em;
 }
 
+.card{
+    width: 70%;
+}
+
+#oque .containe{
+    display: grid;
+}
+
 @media (max-width:675px){
     header .container, .sobre-container{
         flex-direction: column;
