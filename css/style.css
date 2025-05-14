@@ -150,11 +150,12 @@ section{
 }
 
 
-#oque .container{
+#oque {
     display: grid;
     grid-template-columns:repeat(auto-fix, minmax(200px,1fr));
     gap:20px;
     text-align: center;
+    padding: 50px 0;
 }
 
 .card{
