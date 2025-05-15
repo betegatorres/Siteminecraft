@@ -149,19 +149,21 @@ section{
     object-fit:cover;
 }
 
-#oque .container{
+#oque .container {
     display: grid;
-    grid-template-columns:repeat(auto-fix, minmax(200px,1fr));
-    gap:20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
     text-align: center;
     padding: 50px 0;
+}
+
+#oque .item{
+    width: 70%;
 }
 
 .card{
     width: 70%;
 }
-
-
 
 a:hover{
     color:rgb(0, 255, 0);
