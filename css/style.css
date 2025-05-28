@@ -197,16 +197,18 @@ section{
     margin-bottom: 10px;
 }
 
-.card1{
+.modal{
     background-color: #ffffff;
     padding: 20px;
     border-radius: 12px;
     box-shadow:#000000 0 4px 10px;
-    max-width: 300px;
     margin: auto;
     text-align: center;
 }
 
+.card1{
+    max-width: 300px;
+}
 .card1 h3{
     margin-top: 0;
 }
@@ -215,7 +217,7 @@ section{
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background-color:#6b402f transparent ;
+    background-color: #33b606 ;
     color: #ffffff;
     text-decoration: none;
     border-radius: 6px;
@@ -226,15 +228,38 @@ section{
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100vw ;
-    font-weight: 100vh ;
-    background:#6b402f;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
     display: none;
     justify-content: center;
     align-items: center;
+}
 
+.modal:target{
+    display: flex;
+}
 
+.modal-content{
+    background: url(https://static.vecteezy.com/ti/vetor-gratis/p1/2948785-pixel-minecraft-style-land-background-vetor.jpg);
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: #000000 0 5px 20px;
+    margin: auto;
+    color: #ffffff;
+    text-shadow: #000000 5px 5px 5px;
+}
 
+.close-btn{
+    display: inline-block;
+    padding: 8px 16px;
+    background: #33b606;
+    color: #ffffff;
+    border-radius: 6px;
+    text-decoration: none;
 }
 
 a:hover{
