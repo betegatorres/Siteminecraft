@@ -12,13 +12,17 @@
 <p>No modo de sobrevivência, as coisas se parecem mais com um game tradicional: é preciso coletar os recursos certos como madeira, pedra, metal, e assim por diante para construir ferramentas e se proteger, erguer um abrigo e uma fogueira por exemplo. O jogo tem um ciclo de dia e noite, que duram cerca de 20 minutos no mundo real.</p>*/
 
 *{
+    font-family: "Jersey 10", sans-serif;
+    font-weight:100;
+    font-size: 25px;
+    font-style:normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
     scroll-behavior:smooth ;
 }
 
+  
 body{
     background-color:#6b402f; 
 }
@@ -225,6 +229,7 @@ section{
 }
 
 .modal{
+    margin-top: 50px;
     position: fixed;
     top: 0;
     left: 0;
@@ -242,11 +247,13 @@ section{
 }
 
 .modal-content{
+    max-height: 90vh;
+    overflow-y: auto; 
     background: url(https://static.vecteezy.com/ti/vetor-gratis/p1/2948785-pixel-minecraft-style-land-background-vetor.jpg);
     padding: 30px;
     border-radius: 10px;
-    max-width: 400px;
-    text-align: center;
+    max-width: 600px;
+    text-align: justify;
     box-shadow: #000000 0 5px 20px;
     margin: auto;
     color: #ffffff;
@@ -283,4 +290,12 @@ font-size: 0.8em;
     .banner{
         margin-top: 200px;
     }
+    .modal{
+        margin-top: 150px;
+    } 
+
+    .modal-content{
+        max-height: 60vh;
+    } 
 }
+
