@@ -281,7 +281,12 @@ a:hover{
 font-size: 0.8em;
 }
 
-.oque h1, .galeria h1{
+.oque h1{
+    text-align: center;
+    color: #55ff00;
+}
+
+.galeria h1{
     text-align: center;
     color: #55ff00;
 }
