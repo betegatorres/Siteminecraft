@@ -1,98 +1,102 @@
-/* Cores utilizadas:
-#37e445 = verde claro
+/*#37e445 = verde claro
 #37b4e4 = azul claro
 #318af6 = azul escuro
 #33b606 = verde
 #6b402f = marrom
 #663300 = marrom escuro
-*/
 
-* {
+50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25% 
+
+ <p>Minecraft tem modos de jogo, sendo que os principais são o modo criativo e o modo de sobrevivência.</p>
+<p> No modo criativo, os jogadores tem um estoque ilimitado de blocos prontos para usar em um mundo virtual com montanhas, cidades, pessoas e animais. O personagem do jogador nunca vai morrer e pode se mover livremente, até voar pelo mapa.</p>
+<p>No modo de sobrevivência, as coisas se parecem mais com um game tradicional: é preciso coletar os recursos certos como madeira, pedra, metal, e assim por diante para construir ferramentas e se proteger, erguer um abrigo e uma fogueira por exemplo. O jogo tem um ciclo de dia e noite, que duram cerca de 20 minutos no mundo real.</p>*/
+
+*{
     font-family: "Jersey 10", sans-serif;
-    font-weight: 100;
+    font-weight:100;
     font-size: 25px;
-    font-style: normal;
+    font-style:normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    scroll-behavior:smooth ;
 }
 
-body {
-    background-color: #6b402f;
+  
+body{
+    background-color:#6b402f; 
 }
 
-header {
-    background-color: #33b606;
-    color: aliceblue;
-    padding: 15px;
+header{
+    background-color:#33b606 ;
+    color:aliceblue ;
+    padding: 15px 15px 15px 15px ;
     width: 100%;
     top: 0;
     position: fixed;
-    z-index: 1000;
+    z-index: 1000 ;  
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+nav ul{
+list-style: none;
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
 }
 
-nav ul li {
+nav ul li{
+
     margin-left: 20px;
 }
 
-nav ul li a {
+nav ul li a{
     color: white;
     text-decoration: none;
 }
 
-header .container {
+header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
 }
-
-.container {
+.container{
     max-width: 1200px;
     margin: auto;
     padding: 20px;
 }
 
-.logo {
+.logo{
     font-size: 2em;
     font-weight: bold;
 }
-
-.banner {
-    background: url(../img/imagenssobre/minecraft-banner-1.jpg) no-repeat center/cover;
-    flex-direction: column;
-    height: 400px;
-    display: flex;
-    margin-top: 105px;
-    align-items: flex-start;
-    justify-content: center;
-    color: rgb(255, 255, 255);
-    font-size: large;
-    text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(0, 0, 0), 0 0 5px rgb(13, 255, 0);
-    text-align: left;
-    padding-left: 20px;
+.banner{
+background:url(../img/imagenssobre/minecraft-banner-1.jpg) no-repeat center/cover;
+flex-direction: column;
+height: 400px;
+display: flex ;
+margin-top: 105px;
+align-items: flex-start;
+justify-content: center;
+color: rgb(255, 255, 255);
+font-size: large;
+text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(0, 0, 0),0 0 5px rgb(13, 255, 0);
+text-align: left ;
+padding-left: 20px;
 }
 
-section {
+section{
     scroll-margin-top: 100px;
 }
 
-#sobre {
+#sobre{
     padding: 35px;
     background-color: #6b402f;
     color: #ffffff;
     text-shadow: #000000 5px 5px 5px;
 }
 
-.sobre-container {
+.sobre-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -101,67 +105,52 @@ section {
     margin: auto;
 }
 
-.sobre-texto {
+.sobre-texto{
     flex: 1;
     padding: 20px;
-}
 
-.sobre-texto h1 {
-    font-size: 1.5em;
+}
+.sobre-texto h1{
+    font-size: 1.5;
     margin-bottom: 20px;
-}
 
-.sobre-texto p {
-    font-size: 1em;
+}
+.sobre-texto p{
+    font-size: 1;
     line-height: 1.5;
     text-align: justify;
     margin-top: 10px;
 }
-
-.sobre-texto h2 {
+.sobre-texto h2{
     margin-top: 15px;
 }
-
-.sobre-texto a {
-    color: #ffffff;
+.sobre-texto a{
+    color:#ffffff;
     text-shadow: 5px #55ff00;
     text-decoration: none;
 }
 
-.hex-grid {
+.hex-grid{
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    flex: 1;
+    flex: 1;    
 }
 
-.hex {
+.hex{
     width: 140px;
     height: 140px;
-    clip-path: polygon(50% 0%, 93% 21%, 93% 78%, 50% 99%, 7% 78%, 7% 21%);
+    clip-path: polygon(50% 0%, 93% 21%, 93% 78%, 50% 99%, 7% 78%, 7% 21%) ;
     overflow: hidden;
     background-color: #000000;
     position: relative;
 }
 
-.hex img {
+.hex img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-}
-
-#oque {
-    padding: 0 20px 50px 20px;
-    background-color: #ffffff;
-    margin: 0;
-}
-
-#oque h1 {
-    margin: 0 0 20px 0;
-    padding-top: 30px;
-    color: #000000;
-    text-align: center;
+    object-fit:cover;
 }
 
 #oque .container {
@@ -169,12 +158,12 @@ section {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     text-align: center;
-    padding: 0;
+    padding: 50px 0;
 }
 
-#oque .item {
-    background: url(https://i.pinimg.com/474x/79/39/a5/7939a5128dad5a4bdd386b79108b27c2.jpg);
-    border: #ffffff 1px solid;
+#oque .item{
+    background:url(https://i.pinimg.com/474x/79/39/a5/7939a5128dad5a4bdd386b79108b27c2.jpg);
+    border:#ffffff 1px ;
     border-radius: 10px;
     padding: 20px;
     box-shadow: 0 4px 8px #000000;
@@ -182,18 +171,19 @@ section {
     cursor: pointer;
 }
 
-.card {
+.card{
+    width: 70%;
     width: 140px;
     height: 140px;
-    clip-path: polygon(50% 0%, 93% 21%, 93% 78%, 50% 99%, 7% 78%, 7% 21%);
+    clip-path: polygon(50% 0%, 93% 21%, 93% 78%, 50% 99%, 7% 78%, 7% 21%) ;
 }
 
-#oque .item:hover {
+#oque .item:hover{
     transform: translateY(-5px);
     box-shadow: 0 4px 8px #55ff00;
 }
 
-#oque .item:active {
+#oque .item:active{
     transform: scale(0.98);
     box-shadow: 0 4px 8px #6b402fbe;
 }
@@ -204,48 +194,47 @@ section {
     color: aliceblue;
 }
 
-#oque .imagem img {
+#oque .imagem img{
     width: 100%;
     max-width: 150px;
     height: auto;
     margin-bottom: 10px;
 }
 
-.modal {
+.modal{
     background-color: #ffffff;
     padding: 20px;
     border-radius: 12px;
-    box-shadow: #000000 0 4px 10px;
+    box-shadow:#000000 0 4px 10px;
     margin: auto;
     text-align: center;
 }
 
-.card1 {
+.card1{
     max-width: 300px;
 }
-
-.card1 h3 {
+.card1 h3{
     margin-top: 0;
 }
 
-.btn {
+.btn{
     display: inline-block;
     margin-top: 15px;
     padding: 10px 20px;
-    background-color: #33b606;
+    background-color: #33b606 ;
     color: #ffffff;
     text-decoration: none;
     border-radius: 6px;
     cursor: pointer;
 }
 
-.modal {
+.modal{
     margin-top: 50px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    width: 100vw;
+    width: 100vw ;
     height: 100vh;
     background: rgba(0, 0, 0, 0.6);
     display: none;
@@ -253,13 +242,13 @@ section {
     align-items: center;
 }
 
-.modal:target {
+.modal:target{
     display: flex;
 }
 
-.modal-content {
+.modal-content{
     max-height: 90vh;
-    overflow-y: auto;
+    overflow-y: auto; 
     background: url(https://static.vecteezy.com/ti/vetor-gratis/p1/2948785-pixel-minecraft-style-land-background-vetor.jpg);
     padding: 30px;
     border-radius: 10px;
@@ -271,7 +260,7 @@ section {
     text-shadow: #000000 5px 5px 5px;
 }
 
-.close-btn {
+.close-btn{
     display: inline-block;
     padding: 8px 16px;
     background: #33b606;
@@ -280,43 +269,40 @@ section {
     text-decoration: none;
 }
 
-a:hover {
-    color: rgb(0, 255, 0);
-    text-shadow: 5px 5px 5px darkgreen;
+a:hover{
+    color:rgb(0, 255, 0);
+    text-shadow:  5px 5px 5px darkgreen;
 }
 
-.fonte {
-    font-size: 0.8em;
+.fonte{
+font-size: 0.8em;
 }
 
-@media (max-width: 675px) {
-    header .container,
-    .sobre-container {
+@media (max-width:675px){
+    header .container, .sobre-container{
         flex-direction: column;
         text-align: center;
     }
-
-    nav ul {
+    nav ul{
         margin-top: 10px;
         flex-direction: column;
     }
-
-    .banner {
+    .banner{
         margin-top: 200px;
     }
-
-    .modal {
+    .modal{
         margin-top: 150px;
-    }
+    } 
 
-    .modal-content {
+    .modal-content{
         max-height: 60vh;
-    }
+    } 
 
     #oque {
-        padding-left: 0;
-        padding-right: 0;
-        margin-left: 0;
-        margin-right: 0;
-    }
+        background: #ffffff;
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+}
 }
