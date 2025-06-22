@@ -279,7 +279,7 @@ a:hover{
 font-size: 0.8em;
 }
 
-.fotogaleria{ 
+.foto-galeria{ 
    display: grid; 
    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));; 
    gap: 20px; 
