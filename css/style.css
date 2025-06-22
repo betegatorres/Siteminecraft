@@ -298,7 +298,8 @@ font-size: 0.8em;
         max-height: 60vh;
     } 
 
-    #oque .item {
+    #oque {
+        background: #ffffff;
         padding-left: 0px;
         padding-right: 0px;
         margin-left: 0px;
