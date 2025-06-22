@@ -280,10 +280,10 @@ font-size: 0.8em;
 
 .fotogaleria{ 
    display: grid; 
-   grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));; 
+   grid-template-columns: repeat(auto-fit, minmax(200px, 2fr));; 
    gap: 20px; 
-   max-width: 100%; 
-   margin: 0 auto; 
+   text-align: center;
+   padding: 50px 0;
 }
 
 .imgaleria img { 
