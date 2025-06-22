@@ -278,6 +278,28 @@ a:hover{
 font-size: 0.8em;
 }
 
+.fotogaleria{ 
+   display: grid; 
+   grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));; 
+   gap: 20px; 
+   max-width: 100%; 
+   margin: 0 auto; 
+}
+
+.imgaleria img { 
+   width: 100%; 
+   height: auto; 
+   border-radius: 10px; 
+   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
+   transition: transform 0.3s ease; 
+   border: 4px solid #33b606; 
+}
+
+.imgaleria img:hover {
+    transform: scale(1.05); 
+   }
+
+
 @media (max-width:675px){
     header .container, .sobre-container{
         flex-direction: column;
@@ -299,10 +321,16 @@ font-size: 0.8em;
     } 
 
     #oque {
-        background: #ffffff;
-        padding-left: 0px;
-        padding-right: 0px;
-        margin-left: 0px;
-        margin-right: 0px;
-}
+        padding: 0;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .fotogaleria{
+         display: flex;
+         flex-direction: column;
+      }
 }
