@@ -212,6 +212,7 @@ section{
 
 .card1{
     max-width: 300px;
+    text-align: center;
 }
 .card1 h3{
     margin-top: 0;
@@ -282,7 +283,7 @@ font-size: 0.8em;
    display: grid; 
    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));; 
    gap: 20px; 
-   max-width: 100%; 
+   max-width: 80%; 
    margin: 0 auto; 
 }
 
@@ -328,7 +329,7 @@ font-size: 0.8em;
         margin-left: 0;
         margin-right: 0;
     }
-
+    
     .fotogaleria{
          display: flex;
          flex-direction: column;
