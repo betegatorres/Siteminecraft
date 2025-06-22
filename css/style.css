@@ -212,10 +212,12 @@ section{
 
 .card1{
     max-width: 300px;
-    text-align: center;
 }
+
 .card1 h3{
     margin-top: 0;
+    text-align: center;
+    color: #55ff00;
 }
 
 .btn{
@@ -279,6 +281,11 @@ a:hover{
 font-size: 0.8em;
 }
 
+.oque h1, .galeria h1{
+    text-align: center;
+    color: #55ff00;
+}
+
 .foto-galeria{ 
    display: grid; 
    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));; 
@@ -322,8 +329,6 @@ font-size: 0.8em;
     } 
 
     #oque {
-        padding: 0;
-        margin: 0;
         padding-left: 0;
         padding-right: 0;
         margin-left: 0;
