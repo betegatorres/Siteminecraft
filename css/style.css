@@ -292,6 +292,7 @@ font-size: 0.8em;
 }
 
 .foto-galeria{ 
+    justify-content: center;
    display: grid; 
    grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));; 
    gap: 20px; 
