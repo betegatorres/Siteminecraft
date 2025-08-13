@@ -22,7 +22,7 @@
     scroll-behavior:smooth ;
 }
 
-  
+
 body{
     background-color:#6b402f; 
 }
@@ -75,12 +75,27 @@ background:url(../img/imagenssobre/minecraft-banner-1.jpg) no-repeat center/cove
 flex-direction: column;
 height: 400px;
 display: flex ;
-margin-top: 105px;
+margin-top: 120px;
 align-items: flex-start;
 justify-content: center;
 color: rgb(255, 255, 255);
 font-size: large;
 text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(0, 0, 0),0 0 5px rgb(13, 255, 0);
+text-align: left ;
+padding-left: 20px;
+}
+
+.banner-contato{
+background:url(../img/commandblockbanner2.png) no-repeat center/cover;
+flex-direction: column;
+height: 400px;
+display: flex ;
+margin-top: 120px;
+align-items: flex-start;
+justify-content: center;
+color: rgb(255, 255, 255);
+font-size: large;
+text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(0, 0, 0),0 0 5px rgb(255, 238, 0);
 text-align: left ;
 padding-left: 20px;
 }
@@ -311,7 +326,106 @@ font-size: 0.8em;
 
 .imgaleria img:hover {
     transform: scale(1.05); 
-   }
+}
+
+---------------*Contatos*-------------------
+
+.banner-contato{
+background:url(../img/commandblockbanner2.png) no-repeat center/cover;
+flex-direction: column;
+height: 400px;
+display: flex ;
+margin-top: 120px;
+align-items: flex-start;
+justify-content: center;
+color: rgb(255, 255, 255);
+font-size: large;
+text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(0, 0, 0),0 0 5px rgb(255, 238, 0);
+text-align: left ;
+padding-left: 20px;
+}
+
+form{
+background-color: #a1a1a1;
+padding: 30px;
+border-radius: 12px;
+box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+max-width: 800px;
+margin: auto;
+margin-top: 40px;
+color: #000000;
+letter-spacing: 1px;
+}
+
+.centralizar{
+    text-align: center;
+}
+
+.formulario-contato {
+    background-color: #a1a1a1;
+    padding: 30px;
+    border-radius: 22px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: auto;
+    margin-top: 35px;
+    color: #000000;
+}
+  .grupoforms{
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+  .grupoforms input,
+  .grupoforms select,
+  .grupoforms textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-top: 8px;
+}
+  .grupoforms input[type="checkbox"],
+  .grupoforms input[type="radio"] {
+    margin-right: 8px;
+    margin-top: 0;
+}
+  
+  .grupoforms label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+  
+/* .grupo-form {
+display: flex;
+flex-direction: column;
+margin-bottom: 20px;
+font-size: 1.2em;
+}
+  
+.grupo-form input,
+.grupo-form select,
+.grupo-form textarea {
+padding: 10px;
+border: 10px solid #969696;
+border-radius: 10px;
+font-size: 1em;
+margin-top: 8px;
+
+}
+  
+.grupo-form input[type="checkbox"],
+.grupo-form input[type="radio"] {
+margin-right: 8px;
+margin-top: 0;
+}
+  
+.grupo-form label {
+margin-bottom: 5px;
+font-weight: bold;
+} */
 
 
 @media (max-width:675px){
@@ -334,7 +448,7 @@ font-size: 0.8em;
         max-height: 60vh;
     } 
 
-    #oque {
+    #oque{
         padding-left: 0;
         padding-right: 0;
         margin-left: 0;
