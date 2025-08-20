@@ -22,6 +22,10 @@
     scroll-behavior:smooth ;
 }
 
+a{
+    text-decoration: none;  
+  }  
+
 
 body{
     background-color:#6b402f; 
@@ -67,9 +71,13 @@ header .container{
 }
 
 .logo{
+    /* background:url(../img/imagenssobre/Iron_Sword_JE2_BE2.webp) no-repeat center/cover; */
+    max-width: 10px;
+    width: 100%;
     font-size: 2em;
     font-weight: bold;
 }
+
 .banner{
 background:url(../img/imagenssobre/minecraft-banner-1.jpg) no-repeat center/cover;
 flex-direction: column;
@@ -100,6 +108,21 @@ text-align: left ;
 padding-left: 20px;
 }
 
+.bannerdescritivo{
+background:url(../img/imagenssobre/minecraft-banner-1.jpg) no-repeat center/cover;
+flex-direction: column;
+height: 400px;
+display: flex ;
+margin-top: 120px;
+align-items: flex-start;
+justify-content: center;
+color: rgb(255, 255, 255);
+font-size: large;
+text-shadow: 1px 1px 2px rgb(0, 0, 0), 0 0 25px rgb(0, 0, 0),0 0 5px rgb(255, 238, 0);
+text-align: left ;
+padding-left: 20px;
+}
+
 section{
     scroll-margin-top: 100px;
 }
@@ -109,6 +132,7 @@ section{
     background-color: #6b402f;
     color: #ffffff;
     text-shadow: #000000 5px 5px 5px;
+
 }
 
 .sobre-container{
@@ -397,36 +421,51 @@ letter-spacing: 1px;
     margin-bottom: 5px;
     font-weight: bold;
 }
-  
-/* .grupo-form {
-display: flex;
-flex-direction: column;
-margin-bottom: 20px;
-font-size: 1.2em;
-}
-  
-.grupo-form input,
-.grupo-form select,
-.grupo-form textarea {
-padding: 10px;
-border: 10px solid #969696;
-border-radius: 10px;
-font-size: 1em;
-margin-top: 8px;
 
-}
-  
-.grupo-form input[type="checkbox"],
-.grupo-form input[type="radio"] {
-margin-right: 8px;
-margin-top: 0;
-}
-  
-.grupo-form label {
-margin-bottom: 5px;
-font-weight: bold;
-} */
+/* Estilo tabela */
 
+.tabela-container {
+    width: 100%;
+    overflow-x: auto; /* Ativa rolagem horizontal se precisar */
+    -webkit-overflow-scrolling: touch; /* Rolagem suave no mobile */
+  }
+  
+  .tabela-container table {
+    min-width: 500px; /* Define um tamanho mínimo para não “espremê-la” demais */
+  }
+  .tabela-mine {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 1rem;
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo translúcido */
+    color: #33b606;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .tabela-mine th, 
+  .tabela-mine td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 255, 224, 0.3);
+  }
+  
+  .tabela-mine thead {
+    background: linear-gradient(90deg, #54ff1b, #33b606);
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .tabela-mine tbody tr:hover {
+    background-color: rgba(0, 255, 224, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .tabela-mine tbody tr:last-child td {
+    border-bottom: none;
+  }
+  
 
 @media (max-width:675px){
     header .container, .sobre-container{
