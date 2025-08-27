@@ -7,17 +7,69 @@
 
 50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25% 
 
- <p>Minecraft tem modos de jogo, sendo que os principais são o modo criativo e o modo de sobrevivência.</p>
-<p> No modo criativo, os jogadores tem um estoque ilimitado de blocos prontos para usar em um mundo virtual com montanhas, cidades, pessoas e animais. O personagem do jogador nunca vai morrer e pode se mover livremente, até voar pelo mapa.</p>
-<p>No modo de sobrevivência, as coisas se parecem mais com um game tradicional: é preciso coletar os recursos certos como madeira, pedra, metal, e assim por diante para construir ferramentas e se proteger, erguer um abrigo e uma fogueira por exemplo. O jogo tem um ciclo de dia e noite, que duram cerca de 20 minutos no mundo real.</p>*/
+<!-- #game-area {
+    position: relative;
+    width: 80%;
+    height: 300px;
+    margin: 20px auto;
+    background: url("https://thumbs.dreamstime.com/b/fundo-geom%C3%A9trico-da-bandeira-do-papel-de-parede-arte-pixel-jogo-minecraft-textura-cubo-terra-e-grama-com-para-seus-projetos-152699354.jpg") no-repeat center/cover;
+    border: 4px solid #33b606;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#tnt {
+    clip-path: polygon(50% 0%, 93% 21%, 93% 78%, 50% 99%, 7% 78%, 7% 21%) ;
+    position: absolute;
+    width: 80px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+---------------HTML:
+        <section id="jogo">
+    <h1>Jogo do Click</h1>
+    <p>Clique na tnt quantas vezes conseguir!</p>
+    <div id="game-area">
+        <img id="tnt" src="img/imagensoque/tnt.jpg" alt="tnt do Minecraft">
+    </div>
+    <p>Pontos: <span id="score">0</span></p>
+</section>
+
+
+
+-------------Antes do </body>:
+<script>
+    const tnt = document.getElementById("tnt");
+    const scoreDisplay = document.getElementById("score");
+    let score = 0;
+
+    function movetnt() {
+        const gameArea = document.getElementById("game-area");
+        const maxX = gameArea.clientWidth - tnt.clientWidth;
+        const maxY = gameArea.clientHeight - tnt.clientHeight;
+
+        const randomX = Math.floor(Math.random() * maxX);
+        const randomY = Math.floor(Math.random() * maxY);
+
+        tnt.style.left = randomX + "px";
+        tnt.style.top = randomY + "px";
+    }
+
+    tnt.addEventListener("click", () => {
+        score++;
+        scoreDisplay.textContent = score;
+        movetnt();
+    });
+
+    setInterval(movetnt, 1500);
+</script> -->*/
 
 *{
     font-family: "Jersey 10", sans-serif;
     font-weight:100;
     font-size: 25px;
     font-style:normal;
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     scroll-behavior:smooth ;
 }
@@ -72,7 +124,6 @@ header .container{
 
 .logo{
     background:url(../img/imagenssobre/Iron_Sword_JE2_BE2.webp) no-repeat center/cover;
-    max-width: 10px;
     width: 100%;
     font-size: 2em;
     font-weight: bold;
