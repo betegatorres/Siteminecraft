@@ -71,7 +71,7 @@ header .container{
 }
 
 .logo{
-    /* background:url(../img/imagenssobre/Iron_Sword_JE2_BE2.webp) no-repeat center/cover; */
+    background:url(../img/imagenssobre/Iron_Sword_JE2_BE2.webp) no-repeat center/cover;
     max-width: 10px;
     width: 100%;
     font-size: 2em;
