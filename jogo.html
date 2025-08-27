@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo Minecraft</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/imagenssobre/g9kvxxzd5nde1.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+  <style>
+    /* Estilo específico do jogo */
+    #jogo {
+      text-align: center;
+      padding: 5vw;
+      background-color: #2e2e2e;
+      border: 6px solid #33b606;
+      border-radius: 16px;
+      box-shadow: 0px 0px 20px #33b606aa;
+      max-width: 800px;
+      width: 90%;
+      margin: 50px auto;
+    }
+
+    centralizar{
+        margin: auto;
+        display: flex;
+        
+    }
+
+    .game-area {
+      position: relative;
+      width: 100%;
+      height: 40vh;
+      max-height: 400px;
+      margin: 20px auto;
+      background: #111;
+      border: 4px solid #33b606;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .mob {
+      position: absolute;
+      font-size: 8vw;
+      cursor: pointer;
+      transition: 0.2s;
+      user-select: none;
+    }
+
+    @media (max-width: 480px) {
+      .mob {
+        font-size: 12vw;
+      }
+      #jogo {
+        padding: 7vw;
+      }
+    }
+
+    h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+      color: #55ff00;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #ffffff;
+    }
+
+    #score {
+      color: #33b606;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">Logo</a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html#inicio">Inicio</a></li>
+          <li><a href="index.html#sobre">Sobre o Minecraft</a></li> 
+          <li><a href="index.html#oque">Oque os blocos fazem</a></li>
+          <li><a href="index.html#galeria">Galeria de fotos</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+          <li><a href="tabela.html">Tabela</a></li>
+          <li><a href="jogo.html">Jogo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="centralizar">
+    <section id="jogo">
+      <h1>🧟 Caça ao Zumbi 🧟</h1>
+      <p>Clique no Zumbi antes que ele escape!</p>
+      <div class="game-area">
+        <span class="mob">🧟</span>
+      </div>
+      <p>Pontos: <span id="score">0</span></p>
+    </section>
+    </div>
+  </main>
+
+  <footer>
+    <p>2025 - Site desenvolvido por Matheus Torres Betega</p>
+  </footer>
+
+  <script>
+    const mob = document.querySelector(".mob");
+    const gameArea = document.querySelector(".game-area");
+    const scoreDisplay = document.getElementById("score");
+
+    let score = 0;
+    let roundTimer;
+    const ROUND_TIME = 2000; // Tempo para clicar (ms)
+    const SAFE_MARGIN = 20;   // Margem interna
+
+    function moveMob() {
+      const maxX = gameArea.clientWidth - mob.clientWidth - SAFE_MARGIN;
+      const maxY = gameArea.clientHeight - mob.clientHeight - SAFE_MARGIN;
+      const randomX = Math.floor(Math.random() * (maxX - SAFE_MARGIN) + SAFE_MARGIN);
+      const randomY = Math.floor(Math.random() * (maxY - SAFE_MARGIN) + SAFE_MARGIN);
+
+      mob.style.left = randomX + "px";
+      mob.style.top = randomY + "px";
+
+      if (roundTimer) clearTimeout(roundTimer);
+      roundTimer = setTimeout(() => gameOver(), ROUND_TIME);
+    }
+
+    mob.addEventListener("click", () => {
+      score++;
+      scoreDisplay.textContent = score;
+      clearTimeout(roundTimer);
+      moveMob();
+    });
+
+    function gameOver() {
+      alert("💀 O Zumbi te pegou! Pontuação zerada.");
+      score = 0;
+      scoreDisplay.textContent = score;
+      moveMob();
+    }
+
+    moveMob();
+  </script>
+</body>
+</html>
